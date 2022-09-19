@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="startpage.css" />
+    <link rel="stylesheet" href="timer.css" />
+    <link rel="stylesheet" href="resultPage.css" />
+    <link rel="shortcut icon" href="#" />
+
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <div class="start__page">
+        <h1 class="game_name">Memory Game</h1>
+        <div class="start__page__game__start__box">
+          <h1>Start Game</h1>
+          <div class="game__lavels">
+            <button id="easy">Easy</button>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+          </div>
+        </div>
+
+        <div class="result__display hide">
+          <button id="playAgain">Play Again</button>
+          <button id="nextLevel" class="hide">Next Level</button>
+        </div>
+      </div>
+
+      <div class="game__board__container hide">
+        <div class="game__board__container__design">
+          <div class="game__board"></div>
+        </div>
+      </div>
+
+      <div class="timer__container hide">
+        <div class="timer__circle">
+          <div id="timerandMinutes" class="timer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./app.js"></script>
+</html>
